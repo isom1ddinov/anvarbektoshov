@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Dr. Anvarbek Toshov | Stomatolog-implantolog</title>
-<meta name="description" content="Dr. Anvarbek Toshov — stomatolog-implantolog. 10 yillik tajriba, 6000+ o'rnatilgan implant, umrbod kafolat. Bepul konsultatsiyaga yoziling.">
+<title data-i18n="meta.title">Др. Анварбек Тошов | Стоматолог-имплантолог</title>
+<meta name="description" data-i18n-content="meta.description" content="Др. Анварбек Тошов — стоматолог-имплантолог. 10 лет опыта, 6000+ установленных имплантов, пожизненная гарантия. Запишитесь на бесплатную консультацию.">
 <link rel="canonical" href="https://isom1ddinov.uz/">
 <link rel="icon" type="image/png" href="./img/favicon.png">
 <link rel="apple-touch-icon" href="./img/favicon.png">
@@ -12,8 +12,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<meta property="og:title" content="Dr. Anvarbek Toshov | Stomatolog-implantolog">
-<meta property="og:description" content="10 yillik tajriba · 6000+ implant · Umrbod kafolat">
+<meta property="og:title" data-i18n-content="meta.title" content="Др. Анварбек Тошов | Стоматолог-имплантолог">
+<meta property="og:description" data-i18n-content="meta.ogDescription" content="10 лет опыта · 6000+ имплантов · пожизненная гарантия">
 <meta property="og:type" content="website">
 </head>
 <body>
@@ -24,22 +24,33 @@
 <header id="site-header">
   <div class="container">
     <a href="#home" class="brand">
-      <span class="brand-badge"><img src="./img/logo-mark.png" alt="Dental implant logotipi"></span>
-      <span>Dr. Anvarbek Toshov<small>Stomatolog-implantolog</small></span>
+      <span class="brand-badge"><img src="./img/logo-mark.png" data-i18n-alt="brand.logoAlt" alt="Логотип дентального импланта"></span>
+      <span><span data-i18n="brand.name">Др. Анварбек Тошов</span><small data-i18n="brand.role">Стоматолог-имплантолог</small></span>
     </a>
 
     <nav class="main-nav" id="main-nav">
-      <button class="mobile-close" id="mobile-close" aria-label="Yopish"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-      <a href="#home" class="nav-link">Bosh sahifa</a>
-      <a href="#about" class="nav-link">Shifokor</a>
-      <a href="#services" class="nav-link">Xizmatlar</a>
-      <a href="#location" class="nav-link">Manzil</a>
-      <a href="#contact" class="nav-link">Bog'lanish</a>
+      <button class="mobile-close" id="mobile-close" data-i18n-aria="nav.close" aria-label="Закрыть"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <a href="#home" class="nav-link" data-i18n="nav.home">Главная</a>
+      <a href="#about" class="nav-link" data-i18n="nav.doctor">Врач</a>
+      <a href="#services" class="nav-link" data-i18n="nav.services">Услуги</a>
+      <a href="#location" class="nav-link" data-i18n="nav.location">Адрес</a>
+      <a href="#contact" class="nav-link" data-i18n="nav.contact">Контакты</a>
     </nav>
 
     <div class="header-actions">
-      <a href="#contact" class="btn btn-primary">Qabulga yozilish</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Menyu"><svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <div class="lang-switch" id="lang-switch" role="group" data-i18n-aria="lang.group" aria-label="Язык сайта">
+        <span class="lang-thumb" aria-hidden="true"></span>
+        <button type="button" class="lang-btn is-active" data-lang="ru" aria-pressed="true">
+          <svg class="lang-globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
+          <span>RU</span>
+        </button>
+        <button type="button" class="lang-btn" data-lang="uz" aria-pressed="false">
+          <svg class="lang-globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
+          <span>UZ</span>
+        </button>
+      </div>
+      <a href="#contact" class="btn btn-primary" data-i18n="cta.book">Записаться на приём</a>
+      <button class="nav-toggle" id="nav-toggle" data-i18n-aria="nav.menu" aria-label="Меню"><svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </div>
 </header>
@@ -52,40 +63,40 @@
 
   <div class="container hero-grid">
     <div class="hero-copy">
-      <div class="eyebrow">Stomatolog-implantolog</div>
-      <h1>Anvarbek Toshov — <span>sog'lom tabassum</span> ishonchli qo'lda</h1>
-      <p class="lead">10 yillik amaliy tajriba va 6000 dan ortiq muvaffaqiyatli o'rnatilgan implant. Har bir bemorga individual davolash rejasi va umrbod kafolat.</p>
+      <div class="eyebrow" data-i18n="hero.eyebrow">Стоматолог-имплантолог</div>
+      <h1 data-i18n-html="hero.title">Анварбек Тошов — <span>здоровая улыбка</span> в надёжных руках</h1>
+      <p class="lead" data-i18n="hero.lead">10 лет практического опыта и более 6000 успешно установленных имплантов. Индивидуальный план лечения и пожизненная гарантия для каждого пациента.</p>
 
       <div class="hero-stats">
-        <div class="hero-stat"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2l2.4 6.6L21 10l-5 4.4L17.4 21 12 17.3 6.6 21 8 14.4 3 10l6.6-1.4z"/></svg> 10+ yil tajriba</div>
-        <div class="hero-stat"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="4" rx="1"/><path d="M12 14v6M8 20h8"/><path d="M6 10V8a6 6 0 0112 0v2"/></svg> 6000+ implant</div>
-        <div class="hero-stat"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg> Umrbod kafolat</div>
+        <div class="hero-stat"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2l2.4 6.6L21 10l-5 4.4L17.4 21 12 17.3 6.6 21 8 14.4 3 10l6.6-1.4z"/></svg> <span data-i18n="hero.stat1">10+ лет опыта</span></div>
+        <div class="hero-stat"><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="4" rx="1"/><path d="M12 14v6M8 20h8"/><path d="M6 10V8a6 6 0 0112 0v2"/></svg> <span data-i18n="hero.stat2">6000+ имплантов</span></div>
+        <div class="hero-stat"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg> <span data-i18n="hero.stat3">Пожизненная гарантия</span></div>
       </div>
 
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary glow-gold"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M8.5 14l2 2 4-4"/></svg> Bepul konsultatsiya</a>
-        <a href="tel:+998919207711" class="btn btn-outline"><svg class="icon" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2C10 21 3 14 3 6a2 2 0 012-2z"/></svg> Qo'ng'iroq qilish</a>
+        <a href="#contact" class="btn btn-primary glow-gold"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M8.5 14l2 2 4-4"/></svg> <span data-i18n="hero.ctaConsult">Бесплатная консультация</span></a>
+        <a href="tel:+998919207711" class="btn btn-outline"><svg class="icon" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2C10 21 3 14 3 6a2 2 0 012-2z"/></svg> <span data-i18n="hero.ctaCall">Позвонить</span></a>
       </div>
     </div>
 
     <div class="hero-visual reveal">
       <div class="hero-frame">
         <div class="hero-photo-wrap">
-          <img class="doctor-photo" src="img/author.jpg" alt="Dr. Anvarbek Toshov" fetchpriority="high">
+          <img class="doctor-photo" src="img/author.jpg" data-i18n-alt="hero.photoAlt" alt="Др. Анварбек Тошов" fetchpriority="high">
           <div class="hero-photo-shade"></div>
           <div class="hero-photo-badge">
             <span class="mini-check">✓</span>
-            <span><strong>Implantolog</strong><small>Individual yondashuv</small></span>
+            <span><strong data-i18n="hero.badgeTitle">Имплантолог</strong><small data-i18n="hero.badgeText">Индивидуальный подход</small></span>
           </div>
         </div>
       </div>
       <div class="floating-card fc-1">
         <div class="fc-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
-        <div><strong>1 kunda</strong><span>Implantatsiya</span></div>
+        <div><strong data-i18n="hero.fc1Title">За 1 день</strong><span data-i18n="hero.fc1Text">Имплантация</span></div>
       </div>
       <div class="floating-card fc-2">
         <div class="fc-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <div><strong>Umrbod</strong><span>Kafolat</span></div>
+        <div><strong data-i18n="hero.fc2Title">Пожизненная</strong><span data-i18n="hero.fc2Text">Гарантия</span></div>
       </div>
     </div>
   </div>
@@ -96,19 +107,19 @@
   <div class="container trust-grid">
     <div class="trust-item stagger-item">
       <div class="ti-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2l2.4 6.6L21 10l-5 4.4L17.4 21 12 17.3 6.6 21 8 14.4 3 10l6.6-1.4z"/></svg></div>
-      <div><strong>10+ yil tajriba</strong><span>Implantologiya sohasida</span></div>
+      <div><strong data-i18n="trust.1Title">10+ лет опыта</strong><span data-i18n="trust.1Text">В области имплантологии</span></div>
     </div>
     <div class="trust-item stagger-item">
       <div class="ti-icon"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/><circle cx="9" cy="15" r="1.4"/><circle cx="15" cy="15" r="1.4"/></svg></div>
-      <div><strong>Zamonaviy diagnostika</strong><span>Aniq 3D tekshiruv</span></div>
+      <div><strong data-i18n="trust.2Title">Современная диагностика</strong><span data-i18n="trust.2Text">Точное 3D-обследование</span></div>
     </div>
     <div class="trust-item stagger-item">
       <div class="ti-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
-      <div><strong>Umrbod kafolat</strong><span>O'rnatilgan implantlarga</span></div>
+      <div><strong data-i18n="trust.3Title">Пожизненная гарантия</strong><span data-i18n="trust.3Text">На установленные импланты</span></div>
     </div>
     <div class="trust-item stagger-item">
       <div class="ti-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M20 21c0-4-3.6-6-8-6s-8 2-8 6"/><circle cx="12" cy="7" r="4"/></svg></div>
-      <div><strong>Individual reja</strong><span>Har bir bemor uchun</span></div>
+      <div><strong data-i18n="trust.4Title">Индивидуальный план</strong><span data-i18n="trust.4Text">Для каждого пациента</span></div>
     </div>
   </div>
 </section>
@@ -117,13 +128,13 @@
 <section class="services" id="services">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow" style="justify-content:center">Xizmatlar</div>
-      <h2>Asosiy yo'nalishlar</h2>
-      <p>Diagnostikadan implantatsiyagacha — barcha zarur xizmatlar.</p>
+      <div class="eyebrow" style="justify-content:center" data-i18n="services.eyebrow">Услуги</div>
+      <h2 data-i18n="services.title">Основные направления</h2>
+      <p data-i18n="services.lead">От диагностики до имплантации — все необходимые услуги.</p>
     </div>
 
     <div class="services-grid reveal-stagger reveal">
-      <div class="service-card stagger-item" tabindex="0" role="button" data-service="Implantatsiya">
+      <article class="service-card stagger-item" data-service="implant">
         <div class="service-icon" aria-hidden="true">
           <svg class="service-svg" viewBox="0 0 64 64">
             <path d="M20 8c-7 0-11 5-11 13 0 8 4 16 8 21h30c4-5 8-13 8-21 0-8-4-13-11-13-5 0-8 3-12 3s-7-3-12-3Z"/>
@@ -131,10 +142,11 @@
             <path d="M27 42v8M37 42v8"/>
           </svg>
         </div>
-        <h3>Implantatsiya</h3>
-        <p>Zamonaviy implant tizimlari, umrbod kafolat bilan.</p><span class="service-link">Batafsil <span aria-hidden="true">→</span></span>
-      </div>
-      <div class="service-card stagger-item" tabindex="0" role="button" data-service="Protezlash">
+        <h3 data-i18n="svc.implant.title">Имплантация</h3>
+        <p data-i18n="svc.implant.short">Современные имплант-системы с пожизненной гарантией.</p>
+        <button type="button" class="service-link" data-open-service="implant"><span data-i18n="services.more">Подробнее</span> <span aria-hidden="true">→</span></button>
+      </article>
+      <article class="service-card stagger-item" data-service="prosthetics">
         <div class="service-icon" aria-hidden="true">
           <svg class="service-svg" viewBox="0 0 64 64">
             <path d="M8 26c0-7 5-12 12-12 5 0 8 3 12 3s7-3 12-3c7 0 12 5 12 12"/>
@@ -142,20 +154,22 @@
             <path d="M17 27v8M47 27v8"/>
           </svg>
         </div>
-        <h3>Protezlash</h3>
-        <p>Qulay va tabiiy ko'rinishdagi tish protezlari (ko'prik).</p><span class="service-link">Batafsil <span aria-hidden="true">→</span></span>
-      </div>
-      <div class="service-card stagger-item" tabindex="0" role="button" data-service="Estetik stomatologiya">
+        <h3 data-i18n="svc.prosthetics.title">Протезирование</h3>
+        <p data-i18n="svc.prosthetics.short">Удобные и естественные зубные протезы (мосты).</p>
+        <button type="button" class="service-link" data-open-service="prosthetics"><span data-i18n="services.more">Подробнее</span> <span aria-hidden="true">→</span></button>
+      </article>
+      <article class="service-card stagger-item" data-service="aesthetic">
         <div class="service-icon" aria-hidden="true">
           <svg class="service-svg" viewBox="0 0 64 64">
             <path d="M21 10c-8 0-12 6-12 15 0 10 4 20 8 25 3-1 5-4 6-9 1-5 4-7 9-7s8 2 9 7c1 5 3 8 6 9 4-5 8-15 8-25 0-9-4-15-12-15-5 0-7 4-11 4s-6-4-11-4Z"/>
             <path d="M48 7v12M42 13h12"/>
           </svg>
         </div>
-        <h3>Estetik stomatologiya</h3>
-        <p>Tish oqartirish va tabassumni yangilash.</p><span class="service-link">Batafsil <span aria-hidden="true">→</span></span>
-      </div>
-      <div class="service-card stagger-item" tabindex="0" role="button" data-service="Diagnostika / konsultatsiya">
+        <h3 data-i18n="svc.aesthetic.title">Эстетическая стоматология</h3>
+        <p data-i18n="svc.aesthetic.short">Отбеливание зубов и обновление улыбки.</p>
+        <button type="button" class="service-link" data-open-service="aesthetic"><span data-i18n="services.more">Подробнее</span> <span aria-hidden="true">→</span></button>
+      </article>
+      <article class="service-card stagger-item" data-service="diagnostics">
         <div class="service-icon" aria-hidden="true">
           <svg class="service-svg" viewBox="0 0 64 64">
             <rect x="8" y="10" width="48" height="32" rx="6"/>
@@ -163,9 +177,10 @@
             <path d="M28 19c-5 0-7 4-7 9 0 6 2 10 5 13 2-1 3-3 4-6 1-3 2-4 4-4s3 1 4 4c1 3 2 5 4 6 3-3 5-7 5-13 0-5-2-9-7-9-3 0-4 2-6 2s-3-2-6-2Z"/>
           </svg>
         </div>
-        <h3>Diagnostika</h3>
-        <p>3D KT tekshiruvi asosida aniq davolash rejasi.</p><span class="service-link">Batafsil <span aria-hidden="true">→</span></span>
-      </div>
+        <h3 data-i18n="svc.diagnostics.title">Диагностика</h3>
+        <p data-i18n="svc.diagnostics.short">Точный план лечения на основе 3D КТ-обследования.</p>
+        <button type="button" class="service-link" data-open-service="diagnostics"><span data-i18n="services.more">Подробнее</span> <span aria-hidden="true">→</span></button>
+      </article>
     </div>
   </div>
 </section>
@@ -174,9 +189,9 @@
 <section class="location" id="location">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow" style="justify-content:center">Manzil</div>
-      <h2>Klinikani toping</h2>
-      <p>Qulay joylashuv — xaritadan yo'nalishni ko'ring yoki manzilni saqlab qo'ying.</p>
+      <div class="eyebrow" style="justify-content:center" data-i18n="location.eyebrow">Адрес</div>
+      <h2 data-i18n="location.title">Найдите клинику</h2>
+      <p data-i18n="location.lead">Удобное расположение — посмотрите маршрут на карте или сохраните адрес.</p>
     </div>
 
     <div class="location-grid">
@@ -184,19 +199,19 @@
         <!-- TODO: aniq klinika manzili aniqlangach, quyidagi "q=Toshkent" so'rovini
              haqiqiy manzilga almashtiring (masalan q=Toshkent+Mirobod+... ), shunda
              xarita aynan shu nuqtaga markazlashadi. -->
-        <iframe src="https://www.google.com/maps?q=41.33722910826184, 69.27402210793095&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Klinika manzili — xarita"></iframe>
+        <iframe src="https://www.google.com/maps?q=41.33722910826184, 69.27402210793095&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-i18n-title="location.mapTitle" title="Адрес клиники — карта"></iframe>
       </div>
       <div class="location-info reveal">
-        <h3>Qabulxona manzili</h3>
+        <h3 data-i18n="location.cardTitle">Адрес приёма</h3>
         <div class="contact-line">
           <div class="ci-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg></div>
-          <div><strong>Manzil</strong><span>Набережная Анхора, 57А <!-- TODO: aniq klinika manzilini kiriting --></span></div>
+          <div><strong data-i18n="location.addressLabel">Адрес</strong><span>Набережная Анхора, 57А <!-- TODO: aniq klinika manzilini kiriting --></span></div>
         </div>
         <div class="contact-line">
           <div class="ci-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
-          <div><strong>Ish vaqti</strong><span>vaqtingizni band qilib <!-- TODO: tasdiqlang --></span></div>
+          <div><strong data-i18n="location.hoursLabel">Часы работы</strong><span data-i18n="location.hoursValue">По предварительной записи <!-- TODO: tasdiqlang --></span></div>
         </div>
-        <a href="https://www.google.com/maps?q=41.33722910826184, 69.27402210793095" target="_blank" rel="noopener" class="btn btn-outline"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg> Yo'nalishni ochish</a>
+        <a href="https://www.google.com/maps?q=41.33722910826184, 69.27402210793095" target="_blank" rel="noopener" class="btn btn-outline"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg> <span data-i18n="location.routeBtn">Открыть маршрут</span></a>
       </div>
     </div>
   </div>
@@ -206,74 +221,132 @@
 <section class="contact" id="contact">
   <div class="container">
     <div class="section-head reveal">
-      <div class="eyebrow" style="justify-content:center">Bog'lanish</div>
-      <h2>Qabulga yoziling</h2>
-      <p>Formani to'ldiring — tez orada siz bilan bog'lanamiz.</p>
+      <div class="eyebrow" style="justify-content:center" data-i18n="contact.eyebrow">Контакты</div>
+      <h2 data-i18n="contact.title">Запишитесь на приём</h2>
+      <p data-i18n="contact.lead">Заполните форму — мы свяжемся с вами в ближайшее время.</p>
     </div>
 
     <div class="contact-grid">
       <div class="contact-info-card reveal">
-        <h3>Aloqa ma'lumotlari</h3>
-        <p>Savollaringiz bo'lsa, quyidagi kanallar orqali murojaat qiling.</p>
+        <h3 data-i18n="contact.infoTitle">Контактная информация</h3>
+        <p data-i18n="contact.infoLead">Если у вас есть вопросы, свяжитесь с нами по одному из каналов ниже.</p>
 
         <div class="contact-line">
           <div class="ci-icon"><svg class="icon" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2C10 21 3 14 3 6a2 2 0 012-2z"/></svg></div>
-          <div><strong>Telefon</strong><span>+998 91 920 77 11 <!-- TODO: haqiqiy raqamni kiriting --></span></div>
+          <div><strong data-i18n="contact.phoneLabel">Телефон</strong><span>+998 91 920 77 11 <!-- TODO: haqiqiy raqamni kiriting --></span></div>
         </div>
         <div class="contact-line">
           <div class="ci-icon"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
-          <div><strong>Ish vaqti</strong><span>Har kuni 09:00 &ndash; 19:00 <!-- TODO: tasdiqlang --></span></div>
+          <div><strong data-i18n="contact.hoursLabel">Часы работы</strong><span data-i18n="contact.hoursValue">Ежедневно 09:00 &ndash; 19:00 <!-- TODO: tasdiqlang --></span></div>
         </div>
 
         <div class="social-row">
           <a href="https://www.instagram.com/anvarbek_toshov/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
-          <a href="https://t.me/mrToshoff" target="_blank" rel="noopener" aria-label="Telegram"><svg class="icon" target="_blank" viewBox="0 0 24 24"><path d="M21 4L3 11l6 2M21 4l-4 17-8-6M21 4L9 13v6l3-3"/></svg></a>
-          <a href="https://wa.me/998919207711" target="_blank" aria-label="WhatsApp"><svg class="icon" viewBox="0 0 24 24"><path d="M4 20l1.4-4.1A8 8 0 1112 20a8 8 0 01-4-1.1z"/><path d="M9 9c0 3 2 6 6 6"/></svg></a>
+          <a href="https://t.me/mrToshoff" target="_blank" rel="noopener" aria-label="Telegram"><svg class="icon" viewBox="0 0 24 24"><path d="M21 4L3 11l6 2M21 4l-4 17-8-6M21 4L9 13v6l3-3"/></svg></a>
+          <a href="https://wa.me/998919207711" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" viewBox="0 0 24 24"><path d="M4 20l1.4-4.1A8 8 0 1112 20a8 8 0 01-4-1.1z"/><path d="M9 9c0 3 2 6 6 6"/></svg></a>
         </div>
       </div>
 
-      <form class="contact-form reveal" id="booking-form">
-        <div class="form-success" id="form-success"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.3 2.3L16 9.5"/></svg> Telegram ochilmoqda — tayyor xabar avtomatik joylanadi.</div>
+      <form class="contact-form reveal" id="booking-form" novalidate>
+        <div class="form-success" id="form-success"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.3 2.3L16 9.5"/></svg> <span data-i18n="form.success">Открывается Telegram — готовое сообщение подставится автоматически.</span></div>
         <div class="form-row">
-          <div class="field"><label for="f-name">Ismingiz</label><input type="text" id="f-name" required placeholder="Ismingizni kiriting"></div>
-          <div class="field"><label for="f-phone">Telefon raqam</label><input type="tel" id="f-phone" required placeholder="+998 9X XXX XX XX"></div>
+          <div class="field"><label for="f-name" data-i18n="form.nameLabel">Ваше имя</label><input type="text" id="f-name" required data-i18n-placeholder="form.namePlaceholder" placeholder="Введите ваше имя"></div>
+          <div class="field"><label for="f-phone" data-i18n="form.phoneLabel">Номер телефона</label><input type="tel" id="f-phone" required placeholder="+998 9X XXX XX XX"></div>
         </div>
-        <div class="field"><label for="f-service">Qaysi xizmat sizni qiziqtiradi?</label>
-          <select id="f-service">
-            <option>Implantatsiya</option>
-            <option>Protezlash</option>
-            <option>Estetik stomatologiya</option>
-            <option>Diagnostika / konsultatsiya</option>
-          </select>
+
+        <div class="field">
+          <label id="service-label" data-i18n="form.serviceLabel">Какая услуга вас интересует?</label>
+          <div class="select-wrap" id="service-select">
+            <button type="button" class="select-trigger" id="service-trigger" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="service-label service-value">
+              <span class="select-lead-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M8 3C5 3 3.5 5 3.5 8.4c0 3.6 1.7 8.3 3.4 10.9.9 1.4 2.4 1 2.9-.6l.9-3c.3-1 1.3-1 1.6 0l.9 3c.5 1.6 2 2 2.9.6 1.7-2.6 3.4-7.3 3.4-10.9C19.5 5 18 3 15 3c-1.9 0-2.5 1.2-3.5 1.2S9.9 3 8 3Z"/></svg>
+              </span>
+              <span class="select-value is-placeholder" id="service-value" data-i18n="form.servicePlaceholder">Выберите услугу</span>
+              <span class="select-caret" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+
+            <ul class="select-list" id="service-list" role="listbox" aria-labelledby="service-label" tabindex="-1">
+              <li class="select-option" role="option" aria-selected="false" data-value="implant">
+                <span class="so-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M20 8c-7 0-11 5-11 13 0 8 4 16 8 21h30c4-5 8-13 8-21 0-8-4-13-11-13-5 0-8 3-12 3s-7-3-12-3Z"/><path d="M18 42h28M21 48h22M24 54h16"/></svg></span>
+                <span class="so-text"><strong data-i18n="svc.implant.title">Имплантация</strong><small data-i18n="svc.implant.option">Восстановление зуба вместе с корнем</small></span>
+                <span class="so-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+              </li>
+              <li class="select-option" role="option" aria-selected="false" data-value="prosthetics">
+                <span class="so-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M8 26c0-7 5-12 12-12 5 0 8 3 12 3s7-3 12-3c7 0 12 5 12 12"/><path d="M8 27h48M14 35h36M20 43h24"/></svg></span>
+                <span class="so-text"><strong data-i18n="svc.prosthetics.title">Протезирование</strong><small data-i18n="svc.prosthetics.option">Коронки, мосты и протезы</small></span>
+                <span class="so-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+              </li>
+              <li class="select-option" role="option" aria-selected="false" data-value="aesthetic">
+                <span class="so-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M21 10c-8 0-12 6-12 15 0 10 4 20 8 25 3-1 5-4 6-9 1-5 4-7 9-7s8 2 9 7c1 5 3 8 6 9 4-5 8-15 8-25 0-9-4-15-12-15-5 0-7 4-11 4s-6-4-11-4Z"/><path d="M48 7v12M42 13h12"/></svg></span>
+                <span class="so-text"><strong data-i18n="svc.aesthetic.title">Эстетическая стоматология</strong><small data-i18n="svc.aesthetic.option">Отбеливание, виниры, реставрация</small></span>
+                <span class="so-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+              </li>
+              <li class="select-option" role="option" aria-selected="false" data-value="diagnostics">
+                <span class="so-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><rect x="8" y="10" width="48" height="32" rx="6"/><path d="M26 52h12M32 42v10"/></svg></span>
+                <span class="so-text"><strong data-i18n="svc.diagnostics.title">Диагностика</strong><small data-i18n="svc.diagnostics.option">3D КТ и консультация</small></span>
+                <span class="so-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+              </li>
+            </ul>
+            <input type="hidden" id="f-service" name="service" value="">
+          </div>
+          <p class="field-error" id="service-error" data-i18n="form.serviceError">Пожалуйста, выберите услугу.</p>
         </div>
-        <div class="field"><label for="f-msg">Xabar (ixtiyoriy)</label><textarea id="f-msg" placeholder="Savolingiz yoki qulay vaqtingizni yozing"></textarea></div>
-        <button type="submit" class="btn btn-primary btn-block"><span>Telegram orqali so‘rov yuborish</span><span class="btn-arrow" aria-hidden="true">→</span></button>
-        <p class="form-note">Yuborish tugmasi orqali ma'lumotlaringiz Telegram xabari sifatida tayyorlanadi.</p>
+
+        <div class="field"><label for="f-msg" data-i18n="form.msgLabel">Сообщение (необязательно)</label><textarea id="f-msg" data-i18n-placeholder="form.msgPlaceholder" placeholder="Напишите ваш вопрос или удобное время"></textarea></div>
+        <button type="submit" class="btn btn-primary btn-block"><span data-i18n="form.submit">Отправить заявку через Telegram</span><span class="btn-arrow" aria-hidden="true">→</span></button>
+        <p class="form-note" data-i18n="form.note">При отправке ваши данные будут подготовлены в виде сообщения в Telegram.</p>
       </form>
     </div>
   </div>
 </section>
 
+<!-- Service detail modal -->
+<div class="service-modal" id="service-modal" aria-hidden="true">
+  <div class="sm-backdrop" data-modal-close></div>
+  <div class="sm-dialog" role="dialog" aria-modal="true" aria-labelledby="sm-title">
+    <button type="button" class="sm-close" data-modal-close data-i18n-aria="modal.close" aria-label="Закрыть"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+
+    <div class="sm-head">
+      <div class="sm-icon" id="sm-icon" aria-hidden="true"></div>
+      <div class="sm-head-text">
+        <span class="sm-eyebrow" data-i18n="modal.eyebrow">Услуга</span>
+        <h3 id="sm-title"></h3>
+      </div>
+    </div>
+
+    <div class="sm-body">
+      <p class="sm-lead" id="sm-lead"></p>
+      <span class="sm-list-title" data-i18n="modal.included">Что входит</span>
+      <ul class="sm-list" id="sm-list"></ul>
+      <div class="sm-chips" id="sm-chips"></div>
+    </div>
+
+    <div class="sm-foot">
+      <button type="button" class="btn btn-primary" id="sm-book" data-i18n="modal.book">Записаться на эту услугу</button>
+      <a class="btn btn-outline" href="tel:+998919207711" data-i18n="modal.call">Позвонить</a>
+    </div>
+  </div>
+</div>
 
 <!-- Mobile quick actions -->
-<div class="mobile-quickbar" aria-label="Tezkor aloqa">
-  <a href="tel:+998919207711" class="quick-call"><span class="quick-icon">☎</span><span>Qo‘ng‘iroq</span></a>
-  <a href="#contact" class="quick-book"><span class="quick-icon">✦</span><span>Qabulga yozilish</span></a>
+<div class="mobile-quickbar" data-i18n-aria="quick.group" aria-label="Быстрая связь">
+  <a href="tel:+998919207711" class="quick-call"><span class="quick-icon">☎</span><span data-i18n="quick.call">Звонок</span></a>
+  <a href="#contact" class="quick-book"><span class="quick-icon">✦</span><span data-i18n="quick.book">Записаться</span></a>
 </div>
 
 <!-- Footer -->
 <footer>
   <div class="container footer-row">
     <a href="#home" class="brand">
-      <span class="brand-badge"><img src="./img/logo-mark.png" alt="Dental implant logotipi"></span>
-      <span>Dr. Anvarbek Toshov<small>Stomatolog-implantolog</small></span>
+      <span class="brand-badge"><img src="./img/logo-mark.png" data-i18n-alt="brand.logoAlt" alt="Логотип дентального импланта"></span>
+      <span><span data-i18n="brand.name">Др. Анварбек Тошов</span><small data-i18n="brand.role">Стоматолог-имплантолог</small></span>
     </a>
     <div class="footer-links">
-      <a href="#about">Shifokor</a>
-      <a href="#services">Xizmatlar</a>
-      <a href="#contact">Bog'lanish</a>
+      <a href="#about" data-i18n="nav.doctor">Врач</a>
+      <a href="#services" data-i18n="nav.services">Услуги</a>
+      <a href="#contact" data-i18n="nav.contact">Контакты</a>
     </div>
-    <span class="footer-copy">&copy; <span id="year"></span> Barcha huquqlar himoyalangan.</span>
+    <span class="footer-copy">&copy; <span id="year"></span> <span data-i18n="footer.rights">Все права защищены.</span></span>
   </div>
 </footer>
 

@@ -17,11 +17,42 @@ yuklash yetarli.
 - Sayt qasddan qisqa qilindi: faqat Bosh sahifa (Hero) → Ishonch chizig'i → Xizmatlar →
   Bog'lanish → Footer. Instagram obunachilar soni endi ko'rsatilmaydi.
 
+## Ikki til (RU / UZ)
+
+Sayt rus va o'zbek tillarida ishlaydi. **Birinchi kirganda rus tili ochiladi** — tanlov
+`localStorage` (`at-lang`) ga saqlanadi, keyingi tashriflarda o'sha til qayta tiklanadi.
+Header'dagi **RU / UZ** tugmasi tilni sahifani qayta yuklamasdan almashtiradi: barcha
+sectionlar, forma yorliqlari, modal matnlari, `<title>`, meta teglar, `alt`/`aria-label`
+va Telegram'ga yuboriladigan xabar ham tanlangan tilga o'tadi.
+
+Matnlar `script.js` ichidagi `I18N` obyektida (`ru` va `uz` kalitlari bilan) saqlanadi.
+HTML tomonda quyidagi atributlar ishlatiladi:
+
+| Atribut | Nimani almashtiradi |
+| --- | --- |
+| `data-i18n` | element matni (`textContent`) |
+| `data-i18n-html` | ichida `<span>` bo'lgan matn (masalan hero sarlavhasi) |
+| `data-i18n-placeholder` | input/textarea `placeholder` |
+| `data-i18n-aria` / `data-i18n-title` / `data-i18n-alt` | `aria-label`, `title`, `alt` |
+| `data-i18n-content` | `<meta>` teglar |
+
+Yangi matn qo'shish uchun: HTML'ga `data-i18n="yangi.kalit"` yozing va `I18N.ru` /
+`I18N.uz` ichiga o'sha kalitni qo'shing.
+
+## Xizmatlar — "Batafsil" modali
+
+Har bir xizmat kartasidagi **Batafsil** tugmasi (yoki kartaning o'zi) shu xizmat haqida
+to'liq ma'lumotli modal oynani ochadi: tavsif, "nimalar kiradi" ro'yxati va davomiylik /
+kafolat kabi chiplar. Matnlar `script.js` ichidagi `SERVICE_DETAILS` obyektida, har bir
+til uchun alohida turadi. Modaldagi "Shu xizmatga yozilish" tugmasi formaga olib boradi
+va o'sha xizmatni avtomatik tanlab qo'yadi. Escape, backdrop va ✕ tugmasi oynani yopadi.
+
 ## Fayllar
 
 - `index.html` — sahifa tuzilishi
 - `style.css` — dizayn tokenlari, uslublar, responsive qoidalar
-- `script.js` — scroll-reveal, mobil menyu, bog'lanish formasi (Telegram deep-link)
+- `script.js` — i18n (RU/UZ), scroll-reveal, mobil menyu, xizmat modali,
+  maxsus "Xizmatni tanlang" dropdown, bog'lanish formasi (Telegram deep-link)
 
 ## Manba
 
