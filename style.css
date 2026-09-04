@@ -866,7 +866,7 @@ body.modal-locked { overflow: hidden; }
   .sm-dialog {
     width: 90%; max-height: 90dvh;  padding: 26px 20px 22px;
     animation: sm-sheet .4s var(--ease);
-    margin-bottom: 150px;
+    margin-bottom: 20px;
   }
   .sm-dialog::before { border-radius: 26px 26px 0 0; }
   .sm-head { gap: 13px; padding-right: 44px; margin-bottom: 16px; }
@@ -879,6 +879,7 @@ body.modal-locked { overflow: hidden; }
   .select-trigger { min-height: 50px; font-size: .86rem; }
   .so-text strong { font-size: .83rem; }
   .so-text small { font-size: .69rem; }
+  .sm-foot .btn {width: 100%; margin: 5px 0px;}
 }
 @media (max-width: 430px) {
   header .container { gap: 10px; }
@@ -889,6 +890,7 @@ body.modal-locked { overflow: hidden; }
   .lang-btn { min-width: 34px; padding: 7px 6px; font-size: .68rem; letter-spacing: .05em; }
   .nav-toggle { width: 40px; height: 40px; border-radius: 12px; }
     .sm-foot  { display: flex !important; }
+    
 }
 @media (max-width: 400px) {
   .brand { font-size: .8rem; }
