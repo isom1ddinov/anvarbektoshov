@@ -1,79 +1,68 @@
-# Dr. Anvarbek Toshov — stomatolog sayti
+# Dr. Anvarbek Toshov — stomatolog-implantolog sayti
 
-Stomatolog-implantolog Anvarbek Toshov uchun qisqa, professional landing sahifa.
-Toza HTML/CSS/JS bilan yozilgan (build tool talab qilinmaydi) — `index.html` faylini
-brauzerda ochish yoki istalgan statik hosting'ga (GitHub Pages, Netlify, Vercel va h.k.)
-yuklash yetarli.
+Jarroh stomatolog-implantolog Anvarbek Toshov uchun premium landing sahifa (5 bo'lim).
+Toza HTML/CSS/JS — build tool kerak emas. `index.html`'ni brauzerda ochish yoki istalgan
+statik hostingga (GitHub Pages, Netlify, Vercel, oddiy shared hosting) yuklash yetarli.
 
-## Dizayn
+## Bo'limlar
 
-- **Ranglar**: header/aksent `#006666` (teal), fon `#FAF0DC` (kremsimon/qimmat ko'rinish),
-  detallar uchun oltin rang (`#B1854A`).
-- **Shrift**: Golos Text (Google Fonts). 42.uz saytiga tarmoq cheklovi tufayli kira olmadim
-  (bloklangan) — shu sabab uning aniq shriftini tasdiqlay olmadim; Golos Text shunga yaqin,
-  zamonaviy va toza shrift sifatida tanlandi. Aniq shrift nomini bersangiz almashtirib beraman.
-- **Ikonkalar**: barcha ikonka (logotip, implant, protez-ko'prik, estetik/yaltiroq va h.k.)
-  qo'lda chizilgan custom SVG — tashqi ikonka kutubxonasi (Font Awesome va h.k.) ishlatilmagan.
-- Sayt qasddan qisqa qilindi: faqat Bosh sahifa (Hero) → Ishonch chizig'i → Xizmatlar →
-  Bog'lanish → Footer. Instagram obunachilar soni endi ko'rsatilmaydi.
+1. **Hero** — sarlavha, hisoblagichlar (10+ yil, 6000+ implant, 1 kun), CTA, shifokor surati (glow ring).
+2. **Shifokor haqida** — matn + 4 ta ishonch kartasi (bento).
+3. **Xizmatlar** — 4 ta karta, har biri "Batafsil" modalini ochadi.
+4. **Manzil** — Yandex Maps widget (ofis kartochkasi bilan) + "Marshrut qurish" tugmasi.
+5. **Bog'lanish** — aloqa kartasi + forma (Telegram'ga tayyor xabar).
+
+Qo'shimcha: marquee lenta, mobil drawer-menyu, mobil quick-bar (Qo'ng'iroq / Yozilish), preloader.
+
+## Dizayn va animatsiyalar
+
+- Palitra: chuqur teal (`#04302e`…`#159a95`) + krem (`#faf3e6`) + oltin (`#c1924f`…`#e9c78f`).
+- Shriftlar: Plus Jakarta Sans (asosiy) + Playfair Display italic (hero'dagi urg'u so'zi).
+- **GSAP 3.13 + ScrollTrigger** (cdnjs): hero intro (so'zma-so'z sarlavha, stagger), hisoblagichlar,
+  scroll-reveal (`data-reveal`, `data-stagger`), parallax, orb'lar harakati, magnit tugmalar.
+- CSS glow: conic-gradient aylanuvchi ring (surat), spotlight + gradient-border kartalar,
+  oltin pulse CTA, glass (backdrop-filter) elementlar.
+- `prefers-reduced-motion` yoqilgan bo'lsa yoki GSAP yuklanmasa — barcha kontent darhol ko'rinadi.
+
+## Xarita va marshrut (Yandex)
+
+Ofis Yandex Maps'da tashkilot sifatida ro'yxatdan o'tgan: **oid `141355307523`**,
+koordinatalar `41.337263, 69.274077` (`script.js` → `ORG`).
+
+| Holat | Nima ochiladi |
+| --- | --- |
+| Xarita (iframe) | `yandex.uz/map-widget/v1/?oid=141355307523&ol=biz&mode=search…` — ofis kartochkasi ko'rinib turadi, til RU/UZ bilan almashadi |
+| **Marshrut** — telefon | Yandex Go deep link (`3.redirect.appmetrica.yandex.com/route?end-lat…&end-lon…`) — ilova ochiladi, ofis manzil sifatida qo'yiladi; ilova yo'q bo'lsa do'kon sahifasi |
+| **Marshrut** — kompyuter | Yandex Maps: `mode=routes&rtext=~lat,lon&ruri=~ymapsbm1://org?oid=…` — "Mening joylashuvim" → ofis |
+| "Yandex Maps'da ochish" | Tashkilot sahifasi `yandex.uz/maps/org/anvarbek_toshov/141355307523/` |
+
+Qurilma `isMobileDevice()` (User-Agent + touch) orqali aniqlanadi.
 
 ## Ikki til (RU / UZ)
 
-Sayt rus va o'zbek tillarida ishlaydi. **Birinchi kirganda rus tili ochiladi** — tanlov
-`localStorage` (`at-lang`) ga saqlanadi, keyingi tashriflarda o'sha til qayta tiklanadi.
-Header'dagi **RU / UZ** tugmasi tilni sahifani qayta yuklamasdan almashtiradi: barcha
-sectionlar, forma yorliqlari, modal matnlari, `<title>`, meta teglar, `alt`/`aria-label`
-va Telegram'ga yuboriladigan xabar ham tanlangan tilga o'tadi.
-
-Matnlar `script.js` ichidagi `I18N` obyektida (`ru` va `uz` kalitlari bilan) saqlanadi.
-HTML tomonda quyidagi atributlar ishlatiladi:
-
-| Atribut | Nimani almashtiradi |
-| --- | --- |
-| `data-i18n` | element matni (`textContent`) |
-| `data-i18n-html` | ichida `<span>` bo'lgan matn (masalan hero sarlavhasi) |
-| `data-i18n-placeholder` | input/textarea `placeholder` |
-| `data-i18n-aria` / `data-i18n-title` / `data-i18n-alt` | `aria-label`, `title`, `alt` |
-| `data-i18n-content` | `<meta>` teglar |
-
-Yangi matn qo'shish uchun: HTML'ga `data-i18n="yangi.kalit"` yozing va `I18N.ru` /
-`I18N.uz` ichiga o'sha kalitni qo'shing.
-
-## Xizmatlar — "Batafsil" modali
-
-Har bir xizmat kartasidagi **Batafsil** tugmasi (yoki kartaning o'zi) shu xizmat haqida
-to'liq ma'lumotli modal oynani ochadi: tavsif, "nimalar kiradi" ro'yxati va davomiylik /
-kafolat kabi chiplar. Matnlar `script.js` ichidagi `SERVICE_DETAILS` obyektida, har bir
-til uchun alohida turadi. Modaldagi "Shu xizmatga yozilish" tugmasi formaga olib boradi
-va o'sha xizmatni avtomatik tanlab qo'yadi. Escape, backdrop va ✕ tugmasi oynani yopadi.
+Birinchi kirganda rus tili, tanlov `localStorage` (`at-lang`) da saqlanadi. Matnlar
+`script.js` → `I18N` (`ru` / `uz`), xizmat tafsilotlari `SERVICE_DETAILS` ichida.
+HTML atributlari: `data-i18n`, `data-i18n-html`, `data-i18n-placeholder`, `data-i18n-aria`,
+`data-i18n-title`, `data-i18n-alt`, `data-i18n-content`.
 
 ## Fayllar
 
-- `index.html` — sahifa tuzilishi
-- `style.css` — dizayn tokenlari, uslublar, responsive qoidalar
-- `script.js` — i18n (RU/UZ), scroll-reveal, mobil menyu, xizmat modali,
-  maxsus "Xizmatni tanlang" dropdown, bog'lanish formasi (Telegram deep-link)
+- `index.html` — tuzilma, meta/OG, JSON-LD (schema.org `Dentist`)
+- `style.css` — dizayn tokenlari, bo'limlar, responsive (980 / 760 / 430 / 380 px)
+- `script.js` — i18n, GSAP, Yandex marshrut, modal, custom select, forma
+- `img/` — `author.jpg`, `logo-mark.png`, `favicon.png`
 
-## Manba
+Loyihada faqat shu to'plam bo'lishi kerak — `index.html` bitta, ichki papkalarda nusxalar yo'q.
 
-Sayt matnidagi tasdiqlangan faktlar Instagram'dagi ochiq profil ma'lumotlaridan olindi:
-[@anvarbek_toshov](https://www.instagram.com/anvarbek_toshov/) — "Хирург Стоматолог-имплантолог",
-6000+ o'rnatilgan implant, "1 kunda implantatsiya", "umrbod kafolat".
+## O'zgartirish kerak bo'lishi mumkin
 
-## Nashr qilishdan oldin albatta almashtiring
-
-Quyidagi joylar hozircha placeholder (`index.html` ichida `TODO` izohlari bilan belgilangan):
-
-1. **Telefon raqami** — Bog'lanish bo'limidagi `+998 XX XXX XX XX`.
-2. **Klinika manzili** — Bog'lanish bo'limidagi "Toshkent shahri".
-3. **Ish vaqti** — hozirgi "09:00–19:00" taxminiy, tasdiqlang yoki o'zgartiring.
-4. **Telegram/WhatsApp havolalari** — `script.js` ichidagi `TELEGRAM_USERNAME`
-   o'zgaruvchisi va `index.html` ichidagi `social-row` bo'limidagi `#` havolalar.
+- Telefon: `+998 91 920 77 11` (`index.html` ichida `tel:` havolalar va matn).
+- Telegram: `script.js` → `TELEGRAM_USERNAME` (`mrToshoff`).
+- Ish vaqti: `I18N` → `location.hoursValue`, `contact.hoursValue` va JSON-LD `openingHours`.
 
 ## Lokal ko'rish
 
 ```bash
-cd anvarbek-toshov
-python3 -m http.server 8080
-# so'ng brauzerda http://localhost:8080 oching
+python -m http.server 8080
+# brauzerda http://localhost:8080
 ```
