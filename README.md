@@ -7,10 +7,10 @@ statik hostingga (GitHub Pages, Netlify, Vercel, oddiy shared hosting) yuklash y
 ## Bo'limlar
 
 1. **Hero** — sarlavha, hisoblagichlar (10+ yil, 6000+ implant, 1 kun), CTA, shifokor surati (glow ring).
-2. **Shifokor haqida** — matn + 4 ta ishonch kartasi (bento).
+2. **Shifokor haqida** — sarlavha + CTA + 4 ta ishonch kartasi (bento), ortiqcha matnsiz.
 3. **Xizmatlar** — 4 ta karta, har biri "Batafsil" modalini ochadi.
 4. **Manzil** — Yandex Maps widget (ofis kartochkasi bilan) + "Marshrut qurish" tugmasi.
-5. **Bog'lanish** — aloqa kartasi + forma (Telegram'ga tayyor xabar).
+5. **Bog'lanish** — aloqa chiplari (telefon, Telegram, WhatsApp, Instagram) + forma (Telegram'ga tayyor xabar).
 
 Qo'shimcha: marquee lenta, mobil drawer-menyu, mobil quick-bar (Qo'ng'iroq / Yozilish), preloader.
 

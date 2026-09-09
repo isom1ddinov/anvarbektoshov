@@ -54,11 +54,10 @@
       'hero.title': 'Анварбек Тошов — <span>здоровая улыбка</span> в надёжных руках',
       'hero.lead': '10 лет практического опыта и более 6000 успешно установленных имплантов. Индивидуальный план лечения и пожизненная гарантия для каждого пациента.',
       'hero.stat1': 'лет опыта',
-      'hero.stat2': 'установленных имплантов',
+      'hero.stat2': 'имплантов',
       'hero.stat3': 'день — имплантация',
       'hero.ctaConsult': 'Бесплатная консультация',
       'hero.ctaCall': 'Позвонить',
-      'hero.trustLine': 'Пожизненная гарантия на каждый установленный имплант',
       'hero.photoAlt': 'Др. Анварбек Тошов — хирург стоматолог-имплантолог',
       'hero.badgeTitle': 'Имплантолог',
       'hero.badgeText': 'Индивидуальный подход',
@@ -77,10 +76,6 @@
 
       'about.eyebrow': 'О враче',
       'about.title': 'Хирург-имплантолог, которому доверяют улыбку',
-      'about.lead': 'Анварбек Тошов — хирург стоматолог-имплантолог с 10-летней практикой. Более 6000 установленных имплантов, имплантация за 1 день и пожизненная гарантия на каждую работу.',
-      'about.p1': 'Полный цикл: диагностика → имплантация → протезирование',
-      'about.p2': 'Планирование на 3D КТ — предсказуемый результат',
-      'about.p3': 'Безболезненно — под современной анестезией',
       'about.cta': 'Записаться на консультацию',
       'about.insta': 'Работы в Instagram',
 
@@ -95,7 +90,6 @@
 
       'services.eyebrow': 'Услуги',
       'services.title': 'Основные направления',
-      'services.lead': 'От диагностики до имплантации — все необходимые услуги в одном месте.',
       'services.more': 'Подробнее',
 
       'svc.implant.title': 'Имплантация',
@@ -112,11 +106,10 @@
       'svc.diagnostics.option': '3D КТ и консультация',
 
       'location.eyebrow': 'Адрес',
-      'location.title': 'Найдите клинику',
-      'location.lead': 'Нажмите «Построить маршрут» — на телефоне откроется Yandex Go, на компьютере — Яндекс Карты.',
-      'location.mapTitle': 'Anvarbek Toshov — клиника на Яндекс Картах',
+      'location.title': 'Где нас найти',
+      'location.mapTitle': 'Anvarbek Toshov — Яндекс Карты',
       'location.openYandex': 'Открыть в Яндекс Картах',
-      'location.cardTitle': 'Клиника Anvarbek Toshov',
+      'location.cardTitle': 'Anvarbek Toshov',
       'location.addressLabel': 'Адрес',
       'location.addressValue': 'Ташкент, Набережная Анхора, 57А',
       'location.hoursLabel': 'Часы работы',
@@ -124,16 +117,10 @@
       'location.phoneLabel': 'Телефон',
       'location.routeBtn': 'Построить маршрут',
       'location.routeHintDesktop': 'Откроются Яндекс Карты с маршрутом от вашего местоположения',
-      'location.routeHintMobile': 'Откроется Yandex Go — клиника уже будет указана как точка назначения',
+      'location.routeHintMobile': 'Откроется Yandex Go — адрес уже будет указан как точка назначения',
 
       'contact.eyebrow': 'Контакты',
       'contact.title': 'Запишитесь на приём',
-      'contact.lead': 'Заполните форму — мы свяжемся с вами в ближайшее время.',
-      'contact.infoTitle': 'Контактная информация',
-      'contact.infoLead': 'Если у вас есть вопросы, свяжитесь с нами по одному из каналов ниже.',
-      'contact.phoneLabel': 'Телефон',
-      'contact.hoursLabel': 'Часы работы',
-      'contact.hoursValue': 'Ежедневно 09:00 – 19:00',
 
       'form.success': 'Открывается Telegram — готовое сообщение подставится автоматически.',
       'form.nameLabel': 'Ваше имя',
@@ -147,7 +134,6 @@
       'form.msgLabel': 'Сообщение (необязательно)',
       'form.msgPlaceholder': 'Напишите ваш вопрос или удобное время',
       'form.submit': 'Отправить заявку через Telegram',
-      'form.note': 'При отправке ваши данные будут подготовлены в виде сообщения в Telegram.',
 
       'modal.eyebrow': 'Услуга',
       'modal.included': 'Что входит',
@@ -193,11 +179,10 @@
       'hero.title': "Anvarbek Toshov — <span>sog'lom tabassum</span> ishonchli qo'llarda",
       'hero.lead': "10 yillik amaliy tajriba va 6000 dan ortiq muvaffaqiyatli o'rnatilgan implant. Har bir bemorga individual davolash rejasi va umrbod kafolat.",
       'hero.stat1': 'yillik tajriba',
-      'hero.stat2': "o'rnatilgan implant",
+      'hero.stat2': 'implant',
       'hero.stat3': 'kunda implantatsiya',
       'hero.ctaConsult': 'Bepul konsultatsiya',
       'hero.ctaCall': "Qo'ng'iroq qilish",
-      'hero.trustLine': "Har bir o'rnatilgan implantga umrbod kafolat",
       'hero.photoAlt': 'Dr. Anvarbek Toshov — jarroh stomatolog-implantolog',
       'hero.badgeTitle': 'Implantolog',
       'hero.badgeText': 'Individual yondashuv',
@@ -216,10 +201,6 @@
 
       'about.eyebrow': 'Shifokor haqida',
       'about.title': "Tabassumingizni ishonib topshirsa bo'ladigan jarroh-implantolog",
-      'about.lead': "Anvarbek Toshov — 10 yillik amaliyotga ega jarroh stomatolog-implantolog. 6000 dan ortiq o'rnatilgan implant, 1 kunda implantatsiya va har bir ishga umrbod kafolat.",
-      'about.p1': "To'liq sikl: diagnostika → implantatsiya → protezlash",
-      'about.p2': '3D KT asosida rejalashtirish — oldindan aniq natija',
-      'about.p3': "Og'riqsiz — zamonaviy anesteziya ostida",
       'about.cta': 'Konsultatsiyaga yozilish',
       'about.insta': "Instagram'dagi ishlar",
 
@@ -234,7 +215,6 @@
 
       'services.eyebrow': 'Xizmatlar',
       'services.title': "Asosiy yo'nalishlar",
-      'services.lead': 'Diagnostikadan implantatsiyagacha — barcha zarur xizmatlar bir joyda.',
       'services.more': 'Batafsil',
 
       'svc.implant.title': 'Implantatsiya',
@@ -251,11 +231,10 @@
       'svc.diagnostics.option': '3D KT va konsultatsiya',
 
       'location.eyebrow': 'Manzil',
-      'location.title': 'Klinikani toping',
-      'location.lead': '«Marshrut qurish» tugmasini bosing — telefonda Yandex Go, kompyuterda Yandex Maps ochiladi.',
-      'location.mapTitle': 'Anvarbek Toshov — Yandex Maps xaritasida klinika',
+      'location.title': 'Bizni qayerdan topasiz',
+      'location.mapTitle': 'Anvarbek Toshov — Yandex Maps',
       'location.openYandex': "Yandex Maps'da ochish",
-      'location.cardTitle': 'Anvarbek Toshov klinikasi',
+      'location.cardTitle': 'Anvarbek Toshov',
       'location.addressLabel': 'Manzil',
       'location.addressValue': "Toshkent, Anhor bo'yi ko'chasi, 57A",
       'location.hoursLabel': 'Ish vaqti',
@@ -263,16 +242,10 @@
       'location.phoneLabel': 'Telefon',
       'location.routeBtn': 'Marshrut qurish',
       'location.routeHintDesktop': "Yandex Maps sizning joylashuvingizdan marshrut bilan ochiladi",
-      'location.routeHintMobile': "Yandex Go ochiladi — klinika manzil sifatida avtomatik qo'yiladi",
+      'location.routeHintMobile': "Yandex Go ochiladi — manzil avtomatik qo'yiladi",
 
       'contact.eyebrow': "Bog'lanish",
       'contact.title': 'Qabulga yoziling',
-      'contact.lead': "Formani to'ldiring — tez orada siz bilan bog'lanamiz.",
-      'contact.infoTitle': "Aloqa ma'lumotlari",
-      'contact.infoLead': "Savollaringiz bo'lsa, quyidagi kanallar orqali murojaat qiling.",
-      'contact.phoneLabel': 'Telefon',
-      'contact.hoursLabel': 'Ish vaqti',
-      'contact.hoursValue': 'Har kuni 09:00 – 19:00',
 
       'form.success': 'Telegram ochilmoqda — tayyor xabar avtomatik joylanadi.',
       'form.nameLabel': 'Ismingiz',
@@ -286,7 +259,6 @@
       'form.msgLabel': 'Xabar (ixtiyoriy)',
       'form.msgPlaceholder': 'Savolingiz yoki qulay vaqtingizni yozing',
       'form.submit': "Telegram orqali so'rov yuborish",
-      'form.note': "Yuborish tugmasi orqali ma'lumotlaringiz Telegram xabari sifatida tayyorlanadi.",
 
       'modal.eyebrow': 'Xizmat',
       'modal.included': 'Nimalar kiradi',
@@ -933,7 +905,6 @@
         .from('.hero-stat', { y: 22, opacity: 0, duration: .6, stagger: .08 }, '-=.5')
         .add(runCounters, '-=.45')
         .from('.hero-cta .btn', { y: 18, opacity: 0, duration: .6, stagger: .1, clearProps: 'transform' }, '-=.45')
-        .from('.hero-trust-line', { opacity: 0, y: 10, duration: .6 }, '-=.35')
         .from('.hero-frame', { scale: .9, opacity: 0, y: 34, duration: 1.25, ease: 'power4.out' }, .3)
         .from('.floating-card', { scale: .6, opacity: 0, duration: .75, ease: 'back.out(1.8)', stagger: .15 }, '-=.7')
         .from('.scroll-hint', { opacity: 0, y: 8, duration: .6 }, '-=.5')
